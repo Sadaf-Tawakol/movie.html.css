@@ -3,11 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: beige;
+    }
+    body{
+      background-color: black;
+      overflow-y: scroll;
+      
+    }
+    #container {
+      margin-left: 1%;
+      color: beige;
+      width: 80%;
+      height: 100hv;
+      background-color: rgb(34, 31, 31);
+    }
+    .content {
+      position: absolute;
+      top: 100%;
+      margin-top: 20px;
+     line-height: 1.5;
+      
+    } 
+       #video{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-mask-image: linear-gradient(#f0eded, rgba(211, 206, 206, 0));
+      mask-image: linear-gradient(#f0eded, rgba(211, 206, 206, 0));
+    }
+    #match{
+      color: rgb(3, 148, 3);
+    }
+    #box-style{
+background-color: rgb(32, 30, 30);
+    }
+    button{
+      width: 120px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      
+    }
+     .fa-download{
+      color: black;
+    }
+    .fa-play{
+      color: black;
+    }
+    .fa-regular {
+      margin-right: 30px;
+      margin-bottom: 50px;
+      margin-top: 20px;
+      font-size: larger;
+    }
+    .fa-share {
+      margin-left: 20px;
+      margin-bottom: 50px;
+      margin-top: 20px;
+    }
+    .rate {
+      font-size: small;
+
+    }
+    .pagination a{
+  float: left;
+  font-size: larger;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: .2s;
+}
+.pagination{
+  display: inline-block;
+  margin-left:53% ;
+  margin-right: 25%;
+  margin-top: 20px;
+
+}
+.pagination a:hover{
+  background-color: rgb(119, 115, 115);
+  color: #000000;
+ 
+}
+    
+  </style>
 </head>
 <body>
-  <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/PBrgWouBob8?si=pIp3JMxQFzdR0gcz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <div id="container">
+    <div id="video">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PBrgWouBob8?si=pIp3JMxQFzdR0gcz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
   </div>
+  <div class="content">
+    <h1>Death Game</h1>
+    <p><span id="match">98% match </span>2022 <span id="box-style">18+</span> 1 season</p>
+   <h3>It is official: another season is coming</h3>
+   <button id="play">  <i class="fa-solid fa-play"></i> Play</button><br>
+   <button id="Download"> <i class="fa-solid fa-download"></i> Download</button>
+   <p>First one Student. Next a high school. Then an entire city. As a zombie apocalypse spreads fast, only those who can help themselves may stay alive </p>
+   <p>Cast: Part Ji-hu, Yoon Chan-young, Cho Yi Hyun.... 
+    Creators: Lee JQ, Chun Sung-li, Kim Nam-su 
+   </p>
+   <i class="fa-regular fa-thumbs-up"> <br><span class="rate">Rate</span> </i> <i class="fa-solid fa-share"> <br><span class="rate">Share</span></i> 
+   <div class="pagination">
+    <a href="movies.html">&laquo;</a>
+    <a href="index.html">1</a>
+    <a href="movies.html">2</a>
+    <a href="movie-details.html">3</a>
+    <a href="#">&raquo;</a>
+  </div>
+  </div>
+</div>
+</div>
 </body>
 </html>
