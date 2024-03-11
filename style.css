@@ -67,6 +67,7 @@ color: whitesmoke;
   margin-bottom: 15px;
   font-size: 21px;
   color:whitesmoke ;
+  background-color: #000000;
  
 }
 
@@ -240,6 +241,15 @@ main{
   background-color: rgb(119, 115, 115);
   color: #000000;
  
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
 }
 
 
